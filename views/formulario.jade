@@ -1,0 +1,74 @@
+doctype html(lang='en')
+head
+    meta(charset='UTF-8')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    |     
+    title Formulario
+    |     
+    link(rel='stylesheet', href='/css/normalize.css')
+    |     
+    link(rel='stylesheet', href='/css/formulario.css')
+  body
+    form(method='POST', action='/blockchain/formulario')
+      fieldset.a
+        // Tus Datos
+        legend Tus datos
+        |             
+        label(for='nombre') Nombre
+        |             
+        input#nombre(type='text', name='nombre', placeholder='Nombre', autocomplete='on')
+        |             
+        br
+        br
+        |             
+        label(for='apellido') Apellido
+        |             
+        input#apellido(type='text', name='apellido', placeholder='Apellido', autocomplete='on')
+        |             
+        br
+        br
+        |             
+        label(for='email') Email
+        |             
+        input#email(type='email', name='email', placeholder='correo@dominio.com')
+        |             
+        br
+        br
+      |         
+      fieldset
+        // Informacion de la Tutoria
+        legend Informacion de la Tutoria
+        |             
+        label(for='materia') Materia
+        |             
+        input#materia(type='text', name='materia', placeholder='Materia', autocomplete='on')
+        |             
+        |             
+        br
+        br
+        |             
+        label(for='profesor') Profesor
+        |             
+        input#profesor(type='text', name='profesor', placeholder='Profesor', autocomplete='on')
+      |         
+      fieldset
+        // Fecha y Hora
+        legend Fecha y Hora
+        |             
+        label(for='fecha') Fecha
+        |             
+        input#fecha(type='date', name='fecha')
+        |             
+        label(for='hora') Hora
+        |             
+        input(type='time', name='hora')
+        |             
+        br
+        br
+        |             
+        button(type='reset') Borrar
+        |             
+        input(type='submit', value='Enviar')

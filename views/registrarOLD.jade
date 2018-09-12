@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html
+
+block content
+
+form(method="POST" action="/registrar")
+  div.form-group
+    label(for="nombre") Nombre:
+    input#nombre.form-control(type='text', placeholder='Nombre y apellido' name='nombre')
+
+    .form-group
+    label(for="email") Email:
+    input#email.form-control(type='email', placeholder='Ej. pedro@hotmail.com' name='email')
+
+    .form-group
+    label(for="edad") Edad:
+    input#edad.form-control(type='number', placeholder='Edad' name='edad')
+
+    button.btn-outline-dark(type="submit") Enviar

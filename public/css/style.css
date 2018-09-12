@@ -1,0 +1,421 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(//fonts.googleapis.com/css?family=Roboto:400,300,100,700,900);
+/*========================================================
+                      Main Styles
+=========================================================*/
+body {
+  background: #4a4a4a;
+  color: #7a7a7a;
+  font: 300 18px/35px "Roboto", sans-serif;
+  -webkit-text-size-adjust: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+}
+@media (max-width: 479px) {
+  h1 {
+    font-size: 50px;
+    line-height: 63px;
+  }
+}
+
+h2 {
+  font-size: 72px;
+  line-height: 60px;
+  font-weight: 100;
+}
+@media (max-width: 479px) {
+  h2 {
+    font-size: 49px;
+    line-height: 48px;
+  }
+}
+
+h3 {
+  font-size: 55px;
+  line-height: 60px;
+}
+@media (max-width: 479px) {
+  h3 {
+    font-size: 49px;
+    line-height: 55px;
+  }
+}
+
+h4 {
+  font-size: 44px;
+  line-height: 43px;
+  font-weight: 100;
+  color: #535353;
+}
+h4 span {
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 40px;
+  line-height: 50px;
+  color: #383838;
+  font-weight: 100;
+}
+
+h6 {
+  font-size: 36px;
+  line-height: 43px;
+}
+
+p a:hover, .list a:hover {
+  text-decoration: underline;
+}
+p .fa, .list .fa {
+  text-decoration: none;
+}
+
+time {
+  display: block;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+a:focus {
+  outline: none;
+}
+a:active {
+  background-color: transparent;
+}
+
+a[href^="tel:"],
+a[href^="callto:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+a[href^="mailto:"]:hover,
+a[href^="callto:"]:hover {
+  color: #7a7a7a;
+}
+
+strong {
+  font-weight: 400;
+}
+
+address {
+  font-size: 25px;
+  line-height: 28px;
+  color: #535353;
+  text-transform: uppercase;
+}
+
+.fa {
+  line-height: inherit;
+}
+
+[class*='fa-']:before {
+  font-weight: 400;
+  font-size: 50px;
+  font-family: "FontAwesome";
+}
+
+.page {
+  overflow: hidden;
+  min-height: 500px;
+}
+.lt-ie9 .page {
+  min-width: 1200px;
+}
+
+.center {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .media_center {
+    text-align: center;
+  }
+}
+
+hr {
+  margin: 0 auto;
+  border: none;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+.img_bord {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.bord {
+  border: 1px solid #dadada;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*=======================================================
+                       Main Layout
+=========================================================*/
+* + hr {
+  margin-top: 33px;
+}
+
+hr + * {
+  margin-top: 34px;
+}
+
+* + h5 {
+  margin-top: 22px;
+}
+
+* + .row {
+  margin-top: 63px;
+}
+
+* + .index {
+  margin-top: 57px;
+}
+
+* + .price-list {
+  max-width:320px;
+  margin-top: 49px;
+}
+
+* + .fa-envelope-o {
+  margin-top: 27px;
+}
+
+* + .mod {
+  margin-top: 36px;
+}
+
+* + .mod1 {
+  margin-top: 23px;
+}
+
+* + .map {
+  margin-top: 29px;
+}
+
+* + address {
+  margin-top: 39px;
+}
+
+.index + p {
+  margin-top: 55px;
+}
+
+.fa-envelope-o + a {
+  margin-top: 6px;
+  display: inline-block;
+}
+
+h4 + p {
+  margin-top: 52px;
+}
+
+h5 + p {
+  margin-top: 44px;
+}
+
+p + p {
+  margin-top: 13px;
+}
+
+.l-height + .l-height {
+  margin-top: 33px;
+}
+
+.row + .row {
+  margin-top: 34px;
+}
+
+* + .off {
+  margin-top: 31px;
+}
+
+* + .off1 {
+  margin-top: 48px;
+}
+
+
+
+
+/*==================  Backgrounds  ======================*/
+.bg-primary, .bg-secondary1, .bg-images {
+  color: #fff;
+}
+.bg-primary h1, .bg-primary h2, .bg-primary h3, .bg-primary h4, .bg-primary h5, .bg-primary h6, .bg-secondary1 h1, .bg-secondary1 h2, .bg-secondary1 h3, .bg-secondary1 h4, .bg-secondary1 h5, .bg-secondary1 h6, .bg-images h1, .bg-images h2, .bg-images h3, .bg-images h4, .bg-images h5, .bg-images h6 {
+  color: #fff;
+}
+
+.bg-primary {
+  background: #0EA598;
+}
+
+.bg-secondary {
+  background: #f7f7f7;
+}
+
+.bg-secondary1 {
+  background: #525252;
+}
+
+.bg-secondary2 {
+  background: #f6f6f6;
+}
+
+.bg-images {
+  background: url("../images/bg.png") scroll no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.bg-images1 {
+  background: url("../images/bg2.jpg") fixed no-repeat top left;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+@media (max-width: 979px) {
+  .bg-images1 {
+    background-attachment: scroll;
+  }
+}
+@media (max-width: 767px) {
+  .bg-images1 {
+    background: #525252;
+  }
+}
+
+
+
+
+/*==================    Buttons    ======================*/
+.btn {
+  font-size: 21px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #742368;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-weight: 400;
+  padding: 21px 42px 20px 43px;
+  margin-top: 51px;
+  display: inline-block;
+}
+.btn:hover {
+  background: #0EA598;
+  color: #fff;
+}
+.btn:active {
+  background: #C7D438;
+}
+
+
+
+
+
+/*==================     ToTop     ======================*/
+.toTop {
+  width: 42px;
+  height: 42px;
+  font-size: 17px;
+  line-height: 38px;
+  color: #fff;
+  background: #74236B;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: fixed;
+  right: 66px;
+  bottom: 180px;
+  display: none;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  z-index: 20;
+}
+.toTop:hover {
+  background: #0EA598;
+  text-decoration: none;
+}
+
+.toTop:active {
+  background: #C7D438;
+}
+
+@media only screen and (max-width: 1399px) {
+  .toTop {
+    display: none !important;
+  }
+}
+
+/*========================================================
+                     HEADER  Section
+=========================================================*/
+
+header {
+  background: url("/Images/estudiantes.jpg") no-repeat right top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 142px;
+  padding-bottom: 127px;
+  color: #fff;
+}
+/*header{
+                  background: url("../images/header-bgd.jpg") no-repeat right top;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover; 
+                background-size: 100% 100%;
+
+            }
+*/
+header h1, header h3, header h4, header h5, header h6 {
+  color: #fff;
+}
+header h2 {
+  color: #92e4e6;
+}
+header h4 {
+  font-size: 45px;
+  line-height: 60px;
+}
+header .header_cnt {
+  margin-top: 194px;
+  max-width: 650px;
+}
+header .header_cnt * + h4 {
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  header {
+    background-position: 66% top;
+  }
+}
+@media (max-width: 479px) {
+  header {
+    padding-top: 120px;
+    padding-bottom: 110px;
+  }
+}
